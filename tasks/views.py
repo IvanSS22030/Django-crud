@@ -58,8 +58,8 @@ def signin(request):
         'form': AuthenticationForm,
         'error': 'Username or password is incorect'
         })
-            
-        return render(request, 'signin.html',{
-        'form': AuthenticationForm
-        })
+        else:
+            login(request, user)
+            return redirect('tasks')    
+        
     
