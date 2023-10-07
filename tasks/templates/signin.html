@@ -3,8 +3,9 @@
 
   {% block content %}
   <h1>singin</h1>
+  {{error}}
 
-  <form action='/signin' method='POST'>
+  <form action='/signin/' method='POST'>
     {% csrf_token %}
     {{form.as_p}}
     <button>
