@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+{% load static %}
+
 
 
 {% block content %}
@@ -6,12 +8,10 @@
 <main class="container py-5">
     <section class="card card-body">
         <h1 class='display-1 text-center'>Django App</h1>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla felis euismod, cursus libero quis, vehicula dui. Sed consectetur nec lectus non tristique. Suspendisse potenti. Vestibulum auctor tellus at justo faucibus, eget fermentum turpis tincidunt. Duis nec lorem nec quam venenatis viverra. Vivamus id quam nec libero varius dignissim ac id ipsum. Fusce vitae tincidunt elit, nec fermentum nisl. Suspendisse vel justo eleifend, feugiat nisi non, rhoncus leo. Integer cursus malesuada eros non gravida.
-    
-            Sed dapibus eros vel nunc ultrices, eu fringilla eros venenatis. Pellentesque eu ex vitae nisi convallis pellentesque. Suspendisse eu orci id odio dignissim dictum. In hac habitasse platea dictumst. Phasellus at tellus vestibulum, malesuada sapien eget, bibendum nunc. Suspendisse auctor lectus ut magna varius, sit amet eleifend dolor venenatis. Nam luctus tincidunt enim, in cursus metus. Cras malesuada, libero ut dictum cursus, libero dolor blandit tellus, vel dictum dolor lectus id sapien.
-        </p>    
-         
+      
+        <img src="{% static "./images/djangoimg.jpg" %}" alt="My image">
     <div class="text-center">
+
         <a class="btn btn-secondary" href="/signin/">Signin </a>
         <a class="btn btn-dark" href="/signup/">signup </a>
     </div>
